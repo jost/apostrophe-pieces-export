@@ -291,10 +291,10 @@ module.exports = {
           if ((typeof value) === 'object') {
             if (field.type.match(/^joinByArray/)) {
               value = (value || []).map(function (item) {
-                return item.title;
+                return item._id;
               }).join(',');
             } else if (field.type.match(/^joinByOne/)) {
-              value = value ? value.title : '';
+              value = value ? value._id : '';
             } else if (field.type === 'attachment') {
               value = self.apos.attachments.url(value);
             } else if ((field.type === 'area') || (field.type === 'singleton')) {
