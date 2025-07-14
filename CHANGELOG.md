@@ -1,5 +1,13 @@
 ## Changelog
 
+## 2.4.2 (2023-03-06)
+
+* Bump xlsx package to its latest version to remove vulnerabilities.
+
+## 2.4.1 (2021-06-16)
+
+* Fix Include Workflow filter
+
 ## 2.4.0 (2021-05-19)
 
 * Include Workflow filter only for pieces included in Apostrophe Workflow.
